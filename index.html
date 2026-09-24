@@ -3,14 +3,380 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi sitio web</title>
+    <title>NubePlasma | Ciberseguridad</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #0a0f1c;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #050912;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #1c2a3d;
+        }
+
+        .logo {
+            color: #00e5ff;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #00e5ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: radial-gradient(circle, #10243b, #0a0f1c);
+        }
+
+        .hero h1 {
+            color: #00e5ff;
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: auto;
+            color: #c7d2df;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .titulo h2 {
+            color: #00e5ff;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .titulo p {
+            color: #aebdca;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #101827;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #1d3148;
+        }
+
+        .card:hover {
+            border-color: #00e5ff;
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        .card h3 {
+            color: #00e5ff;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #c2ccd6;
+        }
+
+        .icono {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .consejos {
+            background: #070c15;
+        }
+
+        .consejos ul {
+            max-width: 800px;
+            margin: auto;
+            list-style: none;
+        }
+
+        .consejos li {
+            background: #101827;
+            padding: 18px;
+            margin-bottom: 15px;
+            border-left: 4px solid #00e5ff;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #050912;
+            color: #8fa1b2;
+            border-top: 1px solid #1c2a3d;
+        }
+
+        footer strong {
+            color: #00e5ff;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Bienvenido a mi sitio web</h1>
+    <header>
 
-    <p>Mi página está publicada con GitHub Pages.</p>
+        <div class="logo">☁️ NubePlasma</div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="ciberseguridad.html">Ciberseguridad</a>
+        </nav>
+
+    </header>
+
+
+    <section class="hero">
+
+        <h1>Ciberseguridad</h1>
+
+        <p>
+            Aprende los conceptos fundamentales de la ciberseguridad,
+            conoce las principales amenazas digitales y descubre algunas
+            prácticas para proteger tu información.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <div class="titulo">
+
+            <h2>¿Qué es la Ciberseguridad?</h2>
+
+            <p>Protección de sistemas, redes, dispositivos e información.</p>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icono">🔐</div>
+
+                <h3>Seguridad de la información</h3>
+
+                <p>
+                    Busca proteger la información frente a accesos,
+                    modificaciones o pérdidas no autorizadas.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icono">🌐</div>
+
+                <h3>Seguridad de redes</h3>
+
+                <p>
+                    Protege las redes y las comunicaciones contra
+                    accesos y actividades no autorizadas.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icono">💻</div>
+
+                <h3>Seguridad informática</h3>
+
+                <p>
+                    Incluye medidas para proteger computadoras,
+                    sistemas operativos y aplicaciones.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icono">☁️</div>
+
+                <h3>Seguridad en la nube</h3>
+
+                <p>
+                    Protege los datos y servicios utilizados mediante
+                    plataformas de computación en la nube.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <div class="titulo">
+
+            <h2>Principales amenazas</h2>
+
+            <p>Conocerlas ayuda a identificar posibles riesgos.</p>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icono">🎣</div>
+
+                <h3>Phishing</h3>
+
+                <p>
+                    Mensajes o páginas falsas que intentan engañar
+                    al usuario para obtener información.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icono">🦠</div>
+
+                <h3>Malware</h3>
+
+                <p>
+                    Software diseñado para realizar acciones
+                    perjudiciales o no autorizadas.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icono">🔑</div>
+
+                <h3>Contraseñas</h3>
+
+                <p>
+                    Las contraseñas débiles o reutilizadas pueden
+                    facilitar el acceso no autorizado a cuentas.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icono">⚠️</div>
+
+                <h3>Ingeniería social</h3>
+
+                <p>
+                    Técnicas de manipulación utilizadas para conseguir
+                    información o provocar determinadas acciones.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="consejos">
+
+        <div class="titulo">
+
+            <h2>Consejos de seguridad</h2>
+
+            <p>Buenas prácticas para proteger tus cuentas y dispositivos.</p>
+
+        </div>
+
+        <ul>
+
+            <li>🔒 Utiliza contraseñas largas y diferentes para cada cuenta.</li>
+
+            <li>🔐 Activa la autenticación de dos factores cuando sea posible.</li>
+
+            <li>📱 Mantén actualizado tu sistema operativo y tus aplicaciones.</li>
+
+            <li>🎣 No abras enlaces sospechosos.</li>
+
+            <li>📧 Verifica los remitentes de correos y mensajes.</li>
+
+            <li>💾 Realiza copias de seguridad de información importante.</li>
+
+            <li>🌐 Comprueba que los sitios web sean legítimos antes de proporcionar información.</li>
+
+        </ul>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 <strong>NubePlasma</strong> |
+            Sitio educativo de Ciberseguridad
+        </p>
+
+        <p>
+            Creado con HTML y CSS
+        </p>
+
+    </footer>
 
 </body>
 </html>
